@@ -30,6 +30,15 @@
 
 @mixin ct-responsive-svg-custom-proportions() {
   min-height: 100vh;
+  display: block;
+  position: relative;
+
+  > svg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 @mixin ct-align-justify($ct-text-align: $ct-text-align, $ct-text-justify: $ct-text-justify) {

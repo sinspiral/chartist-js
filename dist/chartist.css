@@ -613,6 +613,13 @@
     left: 0; }
 
 .ct-custom-proportions {
-  min-height: 100vh; }
+  min-height: 100vh;
+  display: block;
+  position: relative; }
+  .ct-custom-proportions > svg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 /*# sourceMappingURL=chartist.css.map */
