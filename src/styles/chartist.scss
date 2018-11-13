@@ -28,6 +28,10 @@
   }
 }
 
+@mixin ct-responsive-svg-custom-proportions() {
+  min-height: 100vh;
+}
+
 @mixin ct-align-justify($ct-text-align: $ct-text-align, $ct-text-justify: $ct-text-justify) {
   -webkit-box-align: $ct-text-align;
   -webkit-align-items: $ct-text-align;
@@ -236,6 +240,12 @@
       .#{nth($ct-scales-names, $i + 1)} {
         @include ct-responsive-svg-container($ratio: nth($ct-scales, $i + 1));
       }
+    }
+  }
+
+  @if $ct-include-custom-proportions-container {
+    .#{$ct-custom-proportion-name} {
+      @include ct-responsive-svg-custom-proportions();
     }
   }
 }

@@ -612,4 +612,7 @@
     top: 0;
     left: 0; }
 
+.ct-custom-proportions {
+  min-height: 100vh; }
+
 /*# sourceMappingURL=chartist.css.map */
