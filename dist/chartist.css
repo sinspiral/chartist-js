@@ -3,8 +3,11 @@
   color: rgba(0, 0, 0, 0.4);
   font-size: 0.75rem;
   line-height: 1;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  transform-origin: top left; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .ct-chart-line .ct-label {
+    transform-origin: top left; }
+  .ct-chart-bar .ct-label {
+    transform-origin: center center; }
 
 .ct-chart-line .ct-label,
 .ct-chart-bar .ct-label {

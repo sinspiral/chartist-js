@@ -78,7 +78,12 @@
   font-size: $ct-text-size;
   line-height: $ct-text-line-height;
   font-family: $ct-text-font-family;
-  transform-origin: top left;
+  .#{$ct-class-chart-line} & {
+    transform-origin: top left;
+  }
+  .#{$ct-class-chart-bar} & {
+    transform-origin: center center;
+  }
 }
 
 @mixin ct-chart-grid($ct-grid-color: $ct-grid-color, $ct-grid-width: $ct-grid-width, $ct-grid-dasharray: $ct-grid-dasharray) {
