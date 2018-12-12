@@ -78,13 +78,11 @@
   font-size: $ct-text-size;
   line-height: $ct-text-line-height;
   font-family: $ct-text-font-family;
-  .#{$ct-class-chart-bar} &,
-  .#{$ct-class-chart-pie} &,
-  .#{$ct-class-chart-donut} & {
-    transform-origin: center center;
-  }
   .#{$ct-class-chart-line} & {
     transform-origin: top left;
+  }
+  .#{$ct-class-chart-bar} & {
+    transform-origin: center center;
   }
 }
 
